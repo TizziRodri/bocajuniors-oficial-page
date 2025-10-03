@@ -21,11 +21,14 @@ header {
   align-items: center;
   text-decoration: none;
   color: #fdd835;
-  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 1;
   text-indent: 12px;
+}
+
+.logo h1{
+  font-size: 2rem;
 }
 
 /* Contenedor dentro del encabezado para centrar y espaciar */
