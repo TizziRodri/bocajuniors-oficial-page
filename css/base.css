@@ -1,35 +1,31 @@
-html {
-  position: relative;
-}
-
 body {
   font-family: "Inter", sans-serif;
   background: linear-gradient(90deg, #09376c 0%, #fbf302 50%, #09376c 100%);
-  color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
 header {
   background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
   padding: 0.8rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 100%;
   border-bottom: 4px solid #fdd835;
 }
 
-.logo a {
+.logo a{
   display: flex;
   align-items: center;
   text-decoration: none;
   color: #fdd835;
-  font-size: 1.8rem;
+  font-size: 1rem;
   font-weight: bold;
   letter-spacing: 2px;
   line-height: 1;
-  text-indent: 24px;
+  text-indent: 12px;
 }
 
 /* Contenedor dentro del encabezado para centrar y espaciar */
@@ -37,19 +33,9 @@ header > div {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
-  margin: 0;
   padding: 0 1rem;
   box-sizing: border-box;
-}
-
-header h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 0;
-  color: #fdd835;
-  letter-spacing: 2px;
 }
 
 header img {
@@ -73,13 +59,7 @@ nav ul {
   gap: 0.5rem;
 }
 
-nav li {
-  margin: 0;
-  width: auto;
-}
-
 nav a {
-  display: block;
   padding: 0.4rem 0.6rem;
   font-size: 0.95rem;
   color: #ecf0f1;
@@ -91,8 +71,7 @@ nav a {
   border-radius: 0.5rem;
 }
 
-nav a:hover,
-nav a:focus {
+nav a:hover, nav a:focus {
   background-color: #b5a148;
   border-radius: 0.5rem;
   color: black;
@@ -102,7 +81,10 @@ nav a:focus {
 main {
   padding: 1rem;
   max-width: 1200px;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 section {
@@ -111,13 +93,14 @@ section {
   border-radius: 0.75rem;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  flex-wrap: wrap;
 }
 
 article {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
 }
 
 article:last-child {
@@ -212,23 +195,6 @@ a:hover {
   transition: 0.3s ease;
 }
 
-footer {
-  border-top: 4px solid #fdd835;
-  background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
-  color: #ecf0f1;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-}
-
-footer p {
-  margin: 0;
-  color: #ecf0f1;
-}
-
 .plantelGrid {
   display: flex;
   flex-direction: column;
@@ -276,4 +242,19 @@ ul.players {
   border-radius: 50%;
   margin-bottom: 10px;
   display: block;
+}
+
+footer {
+  border-top: 4px solid #fdd835;
+  background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
+  color: #ecf0f1;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #ecf0f1;
 }
