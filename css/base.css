@@ -58,7 +58,7 @@ nav {
   left: 0;
   background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  z-index: 999;
+  z-index: 1000;
 }
 
 nav.nav-open {
@@ -292,6 +292,42 @@ button.hamburger-menu {
   order: 2;
 }
 
-
+@media screen and (min-width: 768px) {
+  button.hamburger-menu {
+    display: none;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    position: static;
+    box-shadow: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  
+  nav li {
+    width: auto;
+  }
+  
+  nav a {
+    color: #ecf0f1;
+    transition: background-color 0.3s ease;
+    border-radius: 0.5rem; 
+  }
+  
+  nav a:hover{
+    background-color: #b5a148;
+    color: black;
+    transition: all ease 0.3s;
+  }
+  
+}
 
 
