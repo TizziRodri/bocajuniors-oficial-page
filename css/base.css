@@ -29,6 +29,12 @@ header {
 
 .logo h1{
   font-size: 2rem;
+  display: none;
+}
+
+.logo img {
+  position: absolute;
+  right: 45%;
 }
 
 header > div {
@@ -54,7 +60,7 @@ nav {
   flex-direction: column;
   width: 100%;
   position: absolute;
-  top: 106px;
+  top: 84px;
   left: 0;
   background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -327,7 +333,15 @@ button.hamburger-menu {
     color: black;
     transition: all ease 0.3s;
   }
-  
+
+  .logo h1{
+    font-size: 2rem;
+    display: flex;
+  }
+
+  .logo img {
+    position: static;
+  }
 }
 
 
