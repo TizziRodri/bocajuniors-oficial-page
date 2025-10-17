@@ -17,4 +17,11 @@ document.addEventListener( 'DOMContentLoaded' , () => {
         mainNav.classList.remove( 'nav-open' ) ;
       }
     } ) ;
+
+    window.addEventListener( 'resize' , () => {
+      if( window.innerWidth >= 768 ) { 
+        mainNav.classList.remove( 'nav-open' ) ;
+        hamburgerButton.setAttribute('aria-expanded', 'false') ;
+      }
+    } ) ;
   } ) ;
