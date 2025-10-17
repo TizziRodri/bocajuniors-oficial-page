@@ -1,7 +1,6 @@
 document.addEventListener( 'DOMContentLoaded' , () => {
     const hamburgerButton = document.querySelector('.hamburger-menu');
     const mainNav = document.getElementById('main-nav');
-    const h1 = document.getElementById("bocaTitle");
   
     hamburgerButton.addEventListener( 'click' , () => {
       const isExpanded = hamburgerButton
