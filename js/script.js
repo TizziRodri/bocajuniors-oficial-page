@@ -3,10 +3,9 @@ document.addEventListener( 'DOMContentLoaded' , () => {
     const mainNav = document.getElementById('main-nav');
   
     hamburgerButton.addEventListener( 'click' , () => {
-      const isExpanded = hamburgerButton
-        .getAttribute( 'aria-expanded' ) === 'true' ;
+      const isExpanded = hamburgerButton.getAttribute( 'aria-expanded' ) === 'true' ;
       hamburgerButton.setAttribute( 'aria-expanded' , !isExpanded );
-      mainNav.classList.toggle( 'nav-open' ) ; 
+      mainNav.classList.toggle( 'nav-open' );
     } ) ;
     
     document.addEventListener( 'click' , (event) => {
