@@ -60,9 +60,9 @@ nav {
   position: absolute;
   top: 84px;
   left: 0;
-  background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   z-index: 1000;
+  background: linear-gradient(90deg, #012b5a 0%, #301885 100%);
 }
 
 nav.nav-open {
@@ -307,6 +307,7 @@ button.hamburger-menu {
     width: auto;
     position: static;
     box-shadow: none;
+    background: none;
   }
   
   nav ul {
@@ -322,7 +323,6 @@ button.hamburger-menu {
   
   nav a {
     color: #ecf0f1;
-    transition: background-color 0.3s ease;
     border-radius: 0.5rem; 
   }
   
